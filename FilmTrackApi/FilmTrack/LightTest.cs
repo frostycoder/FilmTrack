@@ -20,14 +20,8 @@ namespace FilmTrack
                 lights.Add(new Light {Illuminated = false, Index = i});
             }
 
-            //first person needs to turn on all lights
-            foreach (var light in lights)
-            {
-                light.Illuminated = true;
-            }
-
             //run the test for the rest of the people
-            for (var person = 2; person <= numberOfPeople; person++)
+            for (var person = 1; person <= numberOfPeople; person++)
             {
                 for (var light = person; light <= numberOfLights; light += person)
                 {
