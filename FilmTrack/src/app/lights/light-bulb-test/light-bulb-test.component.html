@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-6">
+    <app-numeric-input [labelText]="'Number of Lights'"
+                       [controlValue]="lightBulbTestParameters.numberOfLights"
+                       (valueChangeEvent)="numberOfLightsChanged($event)"></app-numeric-input>
+  </div>
+
+  <div class="col-6">
+    <app-numeric-input [labelText]="'Number of People'"
+                       [controlValue]="lightBulbTestParameters.numberOfPeople"
+                       (valueChangeEvent)="numberOfPeopleChanged($event)"></app-numeric-input>
+  </div>
+</div>
+
+<div class="row pt-4">
+  <div class="col-12">
+    <button class="btn btn-outline-primary"
+            (click)="runTestButtonClick()">Run Test
+    </button>
+  </div>
+</div>
+

@@ -1,0 +1,19 @@
+<ng-container *ngIf="result">
+
+  <div class="row pt-4">
+    <div class="col-6">
+      <span>Total lights left on: {{result.illuminatedLightCount}}</span>
+    </div>
+    <div class="col-6">
+      <span>Lights left on are: {{result.illuminatedLights}}</span>
+    </div>
+  </div>
+
+  <div class="row pt-4 pb-4">
+    <div class="col-12">
+      <div *ngFor="let light of result.lights">
+        <app-light-bulb [light]="light"></app-light-bulb>
+      </div>
+    </div>
+  </div>
+</ng-container>

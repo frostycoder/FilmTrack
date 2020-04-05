@@ -1,0 +1,25 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import 'node_modules/bootstrap/scss/bootstrap';
+/* You can add global styles to this file, and also import other style files */
+.light-off, .light-on {
+  min-height: 50px;
+  min-width: 50px;
+  margin: 2px;
+  float: left;
+  //text-align: center;
+  .light-label {
+    color: black;
+    font-size: xx-small;
+  }
+}
+
+.light-off {
+  background-image: url("assets/images/lightbulb_off.jpg");
+  background-size: cover;
+}
+
+.light-on {
+  background-image: url("assets/images/lightbulb_on.jpg");
+  background-size: cover;
+}

@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler"
+          type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLink="home"
+           routerLinkActive="active">Light Bulb Test
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLink="client"
+           routerLinkActive="active">Client Solution
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLink="server"
+           routerLinkActive="active">Client/Server Solution
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

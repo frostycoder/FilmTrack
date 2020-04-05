@@ -1,0 +1,9 @@
+<div class="form-group">
+  <label [for]="controlId">{{labelText}}</label>
+  <input [id]="controlId"
+         type="number"
+         pattern="[0-9]*"
+         class="form-control"
+         [(ngModel)]="controlValue"
+         (change)="valueChanged()">
+</div>

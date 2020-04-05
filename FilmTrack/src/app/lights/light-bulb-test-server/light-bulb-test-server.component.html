@@ -1,0 +1,7 @@
+<app-light-bulb-header [isClientSide]="false"></app-light-bulb-header>
+
+<app-light-bulb-test (runTest)="runTest($event)"></app-light-bulb-test>
+
+<ng-container *ngIf="result | async as res">
+  <app-light-bulb-test-results [result]="res"></app-light-bulb-test-results>
+</ng-container>
