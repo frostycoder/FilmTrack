@@ -20,12 +20,7 @@ export class LightsClientService {
     // initialize the the people array
     const people = this.generatePeople(testParams.numberOfPeople);
 
-    // first person, turn on all the lights
-    _.forEach(lights, (light: Light) => {
-      light.toggleLight();
-    });
-
-    for (let currentPerson = 2; currentPerson <= testParams.numberOfPeople; currentPerson++) {
+    for (let currentPerson = 1; currentPerson <= testParams.numberOfPeople; currentPerson++) {
       for (let currentLight = currentPerson; currentLight <= testParams.numberOfLights; currentLight += currentPerson) {
         lights[currentLight - 1].toggleLight();
       }
